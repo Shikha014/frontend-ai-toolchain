@@ -13,3 +13,14 @@ This repository contains my Week 1 setup assignment for the FlyRank AI Internshi
 
 ### Author
 Shikha Kumari
+
+
+## Project Structure
+
+```text
+frontend-ai-toolchain/
+├── README.md
+├── LICENSE
+├── .gitignore
+└── CLAUDE.md
+```
