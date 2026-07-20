@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Login Page</title>
+
+    <style>
+        /* ==========================================
+           Global Styles
+           ========================================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Light background and center the form */
+        body {
+            background-color: #f4f7fb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* ==========================================
+           Login Container
+           ========================================== */
+        .login-container {
+            background-color: #ffffff;
+            padding: 35px;
+            width: 100%;
+            max-width: 400px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Heading */
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+        /* ==========================================
+           Form Styles
+           ========================================== */
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #007BFF;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+        }
+
+        /* ==========================================
+           Login Button
+           ========================================== */
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Hover Effect */
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* ==========================================
+           Responsive Design
+           ========================================== */
+        @media (max-width: 480px) {
+            .login-container {
+                padding: 25px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            input,
+            button {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Login Form Container -->
+    <div class="login-container">
+
+        <h2>Login</h2>
+
+        <!-- Login Form -->
+        <form>
+
+            <!-- Email Field -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                >
+            </div>
+
+            <!-- Password Field -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter your password"
+                    required
+                >
+            </div>
+
+            <!-- Login Button -->
+            <button type="submit">Login</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
